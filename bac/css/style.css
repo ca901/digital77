@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  transition: all ease .3s;
+}
+.content {
+  font-family: 'Raleway', sans-serif;
+  box-shadow: 0 0 10px #000000;
+  position: relative;
+  box-sizing: border-box;
+  z-index: 2;
+  width: 70%;
+  margin: 0 auto;
+  padding: 0 40px 20px;
+  background-color: #344b60;
+  -webkit-overflow-scrolling: touch;
+}
+@media all and (max-width: 700px) {
+  .content {
+    width: 100%;
+  }
+}
+.controls {
+  background: #3d5871;
+  border-radius: 0 0 5px 5px;
+  color: white;
+  margin-bottom: 20px;
+  float: left;
+  width: 100%;
+}
+.controls div {
+  display: inline-block;
+  float: left;
+  padding: 10px;
+}
+.controls div.close {
+  float: right;
+}
+.pane {
+  height: 100vh;
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 20px;
+}
+.pane h1 {
+  color: white;
+  font-size: 50px;
+  z-index: 2;
+  text-align: center;
+  text-shadow: 0 0 20px #000000;
+  top: 75px;
+  left: 50%;
+  margin-left: -150px;
+  position: fixed;
+}
+.pane p {
+  position: fixed;
+  z-index: 2;
+  color: #ffffff;
+  top: 155px;
+  font-weight: bold;
+  text-align: center;
+  left: 50%;
+  margin-left: -145px;
+  text-shadow: 0 0 20px #000000;
+}
+p {
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  line-height: 20px;
+}
+.top {
+  bottom: .5em;
+  right: .5em;
+  color: #ffffff;
+  background: #466581;
+  display: none;
+  opacity: 0.75;
+  z-index: 11;
+  padding: .5em .5em .25em;
+  border-radius: 9999px;
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  text-decoration: none;
+  transition: all ease .3s;
+}
+.top:hover {
+  opacity: 1;
+  transition: all ease .3s;
+}
+.bg-image {
+  color: white;
+  background: url('https://unsplash.imgix.net/photo-1415033523948-6c31d010530d?q=75&fm=jpg&s=559455b1ad675f8dc95a04528044f870') no-repeat center, #466581;
+  position: fixed;
+  height: 100vh;
+  background-size: cover;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+body {
+  background-color: #22313F;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+footer {
+  color: #FC6;
+  text-align: center;
+}
